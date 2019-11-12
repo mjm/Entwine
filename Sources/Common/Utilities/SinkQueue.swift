@@ -26,7 +26,7 @@ import Combine
 
 // MARK: - SinkQueue definition
 
-class SinkQueue<Sink: Subscriber> {
+final class SinkQueue<Sink: Subscriber> {
     
     private var sink: Sink?
     private var buffer = LinkedListQueue<Sink.Input>()
